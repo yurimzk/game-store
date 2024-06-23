@@ -1,0 +1,23 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  description: MyString
+  genre: MyString
+  release_date: 2024-06-21
+  developer: MyString
+  publisher: MyString
+  price: 9.99
+  cover_image: MyString
+  trailer_url: MyString
+
+two:
+  title: MyString
+  description: MyString
+  genre: MyString
+  release_date: 2024-06-21
+  developer: MyString
+  publisher: MyString
+  price: 9.99
+  cover_image: MyString
+  trailer_url: MyString
