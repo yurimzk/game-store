@@ -1,3 +1,13 @@
 <div>
   <h1>Game catalog</h1>
+  <% @games.each do |game| %>
+    <%= image_tag game.cover_image %>
+    <%= game.title %>
+    <%= game.description %>
+    <%= game.genre %>
+    <%= game.release_date %>
+    <%= game.developer %>
+    <%= game.publisher %>
+    <%= game.price %>
+  <% end %>
 </div>
