@@ -16,10 +16,26 @@ class GamesController < ApplicationController
     @game = Game.new(params[:game])
 
     if @game.save
-      redirect_to game_path(@game)
+      redirect_to game_path(@game), notice: 'Game was successfully created.'
     else
       render :new
     end
+  end
+
+  def edit
+  end
+
+  def update
+    if @game.update(game_params)
+      redirect_to @game, notice: 'Game was successfully updated.'
+    else
+      render :edit
+    end
+  end
+
+  def destroy
+    @game.destroy
+    redirect_to game_url, notice: 'Game was successfully destroyed.'
   end
 
   private
